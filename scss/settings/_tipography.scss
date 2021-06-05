@@ -1,0 +1,15 @@
+
+// Font family used
+$font-family: "Inter", sans-serif;
+
+// Font base and font sizes in rem
+$_font-base: 18;
+
+$_fs-56: 56 / $_font-size + rem;
+$_fs-36: 36 / $_font-size + rem;
+$_fs-20: 20 / $_font-size + rem;
+$_fs-18: 18 / $_font-size + rem;
+$_fs-16: 16 / $_font-size + rem;
+$_fs-15: 15 / $_font-size + rem;
+
+$font-size: $_font-base + px;
