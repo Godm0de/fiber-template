@@ -1,0 +1,22 @@
+.input {
+    padding: 0.8889rem 1.1111rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    font-weight: 400;
+    color: var(--input-placeholder-color);
+    
+    &:focus{
+        outline-color: var(--border-color);
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: 0.4444rem;
+        font-weight: 600;
+    }
+
+    &--primary:focus{
+        outline-color: var(--primary-color);
+    }
+}

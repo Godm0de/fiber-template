@@ -4,6 +4,7 @@ $_black: #000000;
 $_white: #FFFFFF;
 $_blue:#4D13D1;
 $_grey:#DADADA;
+$_darker-grey: #A9A9A9;
 $_yellowish-white:#FBF8F3;
 $_seagreen:#45B19E;
 $_dark-grey:#4F4F4F;
@@ -24,5 +25,6 @@ $param-dark-strong-color: $_black;
 $title-dark-color: $_white;
 $param-dark-color: $_soft-lilac;
 $button-text-color: $_yellowish-white;
+$input-placeholder-color: $_darker-grey;
 
 $border-color: $_grey;

@@ -354,6 +354,7 @@ Recommendation: math.div(16, $-font-base) */
   --title-dark-color: #FFFFFF;
   --param-dark-color: #E5DDFD;
   --button-text-color: #FBF8F3;
+  --input-placeholder-color: #A9A9A9;
   --border-color: #DADADA;
   --button-fs: 1rem;
 }
@@ -401,7 +402,7 @@ p {
 }
 
 .button {
-  padding: 0.8889em 1.3333em;
+  padding: 0.8889em 1.5556rem;
   border: 0;
   border-radius: 5px;
   font-size: var(--button-fs);
@@ -432,6 +433,25 @@ p {
 }
 .button--outline-primary:hover {
   background: #e6e6e6;
+}
+
+.input {
+  padding: 0.8889rem 1.1111rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-weight: 400;
+  color: var(--input-placeholder-color);
+}
+.input:focus {
+  outline-color: var(--border-color);
+}
+.input__label {
+  display: block;
+  margin-bottom: 0.4444rem;
+  font-weight: 600;
+}
+.input--primary:focus {
+  outline-color: var(--primary-color);
 }
 
 .list {
