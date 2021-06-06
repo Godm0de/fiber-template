@@ -1,0 +1,23 @@
+.button {
+    padding: 0.8889rem 1.3333rem;
+    font-size: var(--button-fs);
+    font-weight: bold;
+
+    &--primary{
+        color: var(--button-text-color);
+        background-color: var(--primary-color); 
+        border: 0;
+    }
+
+    &--light-primary{
+        color: var(--primary-color);
+        background-color: #FFFFFF;
+        border: 0;
+    }
+
+    &--outline-primary{
+        border: 1px solid var(--border-color);
+        color: var(--primary-color);
+        background-color: #FFFFFF;
+    }
+}

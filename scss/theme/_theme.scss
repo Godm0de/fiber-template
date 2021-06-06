@@ -1,0 +1,23 @@
+@use "../settings/colors";
+@use "../settings/typography";
+
+:root {
+    // Color Scheme
+    --primary-color: #{colors.$primary-color};
+    --secondary-color: #{colors.$secondary-color};
+    
+    --bg-primary-color: #{colors.$bg-primary-color};
+    --bg-secondary-color: #{colors.$bg-secondary-color};
+    
+    --title-light-color: #{colors.$title-light-color};
+    --param-light-color: #{colors.$param-light-color};
+    --param-dark-strong-color: #{colors.$param-dark-strong-color};
+    --title-dark-color: #{colors.$title-dark-color};
+    --param-dark-color: #{colors.$param-dark-color};
+    --button-text-color: #{colors.$button-text-color};
+    
+    --border-color: #{colors.$border-color};
+
+    // Font size
+    --button-fs:  #{typography.$fs-18};
+}

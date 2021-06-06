@@ -1,0 +1,30 @@
+@use "../settings/typography";
+
+// font-scale
+h1{
+    font-size: typography.$fs-56;
+}
+
+h2{
+    font-size: typography.$fs-36;
+}
+
+h3{
+    font-size: typography.$fs-20;
+}
+
+h4{
+    font-size: typography.$fs-18;
+}
+
+h5{
+    font-size: typography.$fs-15;
+}
+
+h6{
+    font-size: typography.$fs-12;
+}
+
+p{
+    font-size: typography.$fs-18;
+}

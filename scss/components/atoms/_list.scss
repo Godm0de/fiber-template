@@ -1,0 +1,26 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style-image: url(../../../img/Checkmark.svg);
+
+    &__item{
+        margin: 0.8889rem auto;
+    }
+
+    &--primary {
+        list-style-image: url(../../../img/Checkmark.svg) var(--primary-color);
+    }
+
+    &--primary {
+        list-style-image: url(../../../img/Checkmark.svg) var(--secondary-color);
+    }
+
+    &--horiz {
+        display: inline-block;
+
+        &__item{
+            margin: auto 0.8889rem;
+        }
+    }
+}
