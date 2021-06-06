@@ -360,6 +360,7 @@ Recommendation: math.div(16, $-font-base) */
 
 body {
   font-size: 18px;
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
