@@ -1,0 +1,29 @@
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.7078rem;
+
+    &__avatar{
+        max-width: 3rem;
+        max-height: 3rem;
+        border-radius: 50%;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 0.1111rem;
+    }
+
+    &__name{
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 701;
+        margin: 0;
+    }
+
+    &__subname{
+        font-size: 15px;
+        margin: 0;
+    }
+}

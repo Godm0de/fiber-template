@@ -27,6 +27,11 @@
 
     &--horiz {
         display: inline-flex;
+        align-items: center;
         gap: 0.8889rem;
+    }
+
+    &--horiz &__item{
+        margin-bottom: 0;
     }
 }

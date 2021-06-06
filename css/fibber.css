@@ -366,22 +366,27 @@ body {
 
 h1 {
   font-size: 3.1111111111rem;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.1111111111rem;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 h5 {
   font-size: 0.8333333333rem;
+  font-weight: bold;
 }
 
 h6 {
@@ -394,7 +399,7 @@ p {
 
 .container {
   width: 100%;
-  max-width: calc(100% - 16.6667rem);
+  max-width: 63.3333rem;
   padding-left: 2.2222rem;
   padding-right: 2.2222rem;
   margin-left: auto;
@@ -479,7 +484,54 @@ p {
 }
 .list--horiz {
   display: inline-flex;
+  align-items: center;
   gap: 0.8889rem;
+}
+.list--horiz .list__item {
+  margin-bottom: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.7078rem;
+}
+.profile__avatar {
+  max-width: 3rem;
+  max-height: 3rem;
+  border-radius: 50%;
+}
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1111rem;
+}
+.profile__name {
+  font-size: 15px;
+  color: var(--primary-color);
+  font-weight: 701;
+  margin: 0;
+}
+.profile__subname {
+  font-size: 15px;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2778rem;
+  border: 1px solid var(--border-color);
+  max-width: 19.8944rem;
+}
+.card__header {
+  margin-bottom: 0.5806rem;
+}
+.card__body .button {
+  min-width: 100%;
+}
+.card__text {
+  margin-bottom: 0.8889rem;
 }
 
 /*# sourceMappingURL=fibber.css.map */
