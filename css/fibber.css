@@ -456,24 +456,30 @@ p {
 
 .list {
   list-style: none;
-  padding: 0;
   margin: 0;
-  list-style-image: url(../../../img/Checkmark.svg);
+  padding: 0;
 }
 .list__item {
-  margin: 0.8889rem auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4444rem;
+  list-style: none;
 }
-.list--primary {
-  list-style-image: url(../../../img/Checkmark.svg) var(--primary-color);
+.list__item:not(:last-child) {
+  margin-bottom: 0.8889rem;
 }
-.list--secondary {
-  list-style-image: url(../../../img/Checkmark.svg) var(--secondary-color);
+.list__bullet {
+  display: inline-block;
+  background: url("../../../img/Checkmark.svg");
+  height: 24px;
+  width: 24px;
+}
+.list__bullet--primary {
+  background: url("../../../img/Checkmark.svg");
 }
 .list--horiz {
-  display: inline-block;
-}
-.list--horiz__item {
-  margin: auto 0.8889rem;
+  display: inline-flex;
+  gap: 0.8889rem;
 }
 
 /*# sourceMappingURL=fibber.css.map */

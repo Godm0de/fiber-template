@@ -1,26 +1,32 @@
 .list {
     list-style: none;
-    padding: 0;
     margin: 0;
-    list-style-image: url(../../../img/Checkmark.svg);
+    padding: 0;
 
-    &__item{
-        margin: 0.8889rem auto;
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 0.4444rem;
+        list-style: none;
+
+        &:not(:last-child) {
+            margin-bottom: 0.8889rem;
+        }
     }
 
-    &--primary {
-        list-style-image: url(../../../img/Checkmark.svg) var(--primary-color);
-    }
+    &__bullet{
+        display: inline-block;
+        background: url('../../../img/Checkmark.svg');
+        height: 24px;
+        width: 24px;
 
-    &--secondary {
-        list-style-image: url(../../../img/Checkmark.svg) var(--secondary-color);
+        &--primary{
+            background: url('../../../img/Checkmark.svg');
+        }
     }
 
     &--horiz {
-        display: inline-block;
-
-        &__item{
-            margin: auto 0.8889rem;
-        }
+        display: inline-flex;
+        gap: 0.8889rem;
     }
 }
