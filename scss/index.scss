@@ -21,5 +21,8 @@
 @use "./components/atoms/list";
 @use "./components/atoms/profile";
 
+@use "./components/molecules/sidebar";
 @use "./components/molecules/card";
+@use "./components/molecules/navbar";
+
 // Utilities

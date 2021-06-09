@@ -357,6 +357,15 @@ Recommendation: math.div(16, $-font-base) */
   --input-placeholder-color: #A9A9A9;
   --border-color: #DADADA;
   --button-fs: 1rem;
+  --z-index1: 1;
+  --z-index2: 2;
+  --z-index3: 3;
+  --z-index4: 4;
+  --z-index5: 5;
+  --z-index6: 6;
+  --z-index7: 7;
+  --z-index8: 8;
+  --z-index9: 9;
 }
 
 body {
@@ -517,6 +526,58 @@ p {
   margin: 0;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--param-light-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.12);
+  padding: 1.1111rem;
+  min-width: 60%;
+  z-index: var(--z-index1);
+  transform: translateX(-13.8889rem);
+  transition: transform 0.3s;
+}
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+}
+.sidebar__item:not(:last-child) {
+  margin-bottom: 1.9444rem;
+}
+.sidebar__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.1111rem;
+}
+.sidebar__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5556rem;
+}
+.sidebar__icon {
+  color: #4D4D4D;
+}
+.sidebar__link {
+  color: #4D4D4D;
+}
+.sidebar__link:visited, .sidebar__link:active, .sidebar__link:link {
+  text-decoration: none;
+}
+.sidebar__link:hover {
+  text-decoration: none;
+  color: #181818;
+}
+
+.sidebar.opened {
+  transform: translateX(0);
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -532,6 +593,37 @@ p {
 }
 .card__text {
   margin-bottom: 0.8889rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.2778em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.navbar__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  transform: opacity 0.3s;
+}
+
+.sidebar.opened ~ .navbar__overlay {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=fibber.css.map */

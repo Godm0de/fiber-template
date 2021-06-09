@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiber</title>
     <link rel="stylesheet" href="css/fibber.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body class="container">
+    <nav class="navbar">
+        <h3 class="navbar__logo">Fiber</h3>
+        <button class="navbar__toggle" id="navbarToggler">
+            <img class="navbar__icon" src="img/Hamburger Menu.svg" alt="">
+        </button>
+    
+        <div class="sidebar" id="sidebar">
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <i class="material-icons sidebar__icon">people</i>
+                    <a href="" class="sidebar__link">Community</a>
+                </li>
+                <li class="sidebar__item">
+                    <i class="material-icons sidebar__icon">forum</i>
+                    <a href="" class="sidebar__link">Pricing</a>
+                </li>
+                <li class="sidebar__item">
+                    <i class="material-icons sidebar__icon">local_library</i>
+                    <a href="" class="sidebar__link">Features</a>
+                </li>
+            </ul>
+            <div class="sidebar__buttons sidebar__icon">
+                <button class="button">Sign In</button>
+                <button class="button button--primary">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="navbar__overlay" id="overlay"></div>
+    </nav>
+   
+ 
         <div class="card">
             <div class="profile card__header">
                 <img src="img/User Avatar.svg" class="profile__avatar" alt="">
@@ -21,6 +55,9 @@
                 <button class="button button--outline-primary">View Sarah’s Portfolio</button>
             </div>
         </div>
-    </div>
+    </div> 
+
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

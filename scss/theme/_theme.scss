@@ -1,5 +1,6 @@
 @use "../settings/colors";
 @use "../settings/typography";
+@use "../settings/zindex";
 
 :root {
     // Color Scheme
@@ -22,4 +23,15 @@
 
     // Font size
     --button-fs:  #{typography.$fs-18};
+
+    // z-index
+    --z-index1: #{zindex.$z-index1};
+    --z-index2: #{zindex.$z-index2};
+    --z-index3: #{zindex.$z-index3};
+    --z-index4: #{zindex.$z-index4};
+    --z-index5: #{zindex.$z-index5};
+    --z-index6: #{zindex.$z-index6};
+    --z-index7: #{zindex.$z-index7};
+    --z-index8: #{zindex.$z-index8};
+    --z-index9: #{zindex.$z-index9};
 }

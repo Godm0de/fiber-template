@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__toggle {
+        display: flex;
+        align-items: center;
+        padding: 0.2778em;
+
+        background: transparent;
+        border: 0;
+
+        cursor: pointer;
+    }
+
+    &__overlay{
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+        visibility: hidden;
+        opacity: 0;
+        transform: opacity 0.3s;
+    }
+
+}
+
+.sidebar.opened ~ .navbar__overlay{
+    visibility: visible;
+    opacity: 1;
+}   
