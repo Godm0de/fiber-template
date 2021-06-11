@@ -24,5 +24,10 @@
 @use "./components/molecules/sidebar";
 @use "./components/molecules/card";
 @use "./components/molecules/navbar";
+@use "./components/molecules/hero";
+
+@use "./components/organisms/header";
 
 // Utilities
+@use "./utilities/background";
+@use "./utilities/text";

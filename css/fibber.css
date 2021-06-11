@@ -347,13 +347,14 @@ Recommendation: math.div(16, $-font-base) */
   --primary-color: #4D13D1;
   --secondary-color: #45B19E;
   --bg-primary-color: #FFFFFF;
-  --bg-secondary-color: #FDE3A7;
+  --bg-secondary-color: #FBF8F3;
   --title-light-color: #000000;
   --param-light-color: #FFFFFF;
   --param-dark-strong-color: #000000;
   --title-dark-color: #FFFFFF;
   --param-dark-color: #E5DDFD;
   --button-text-color: #FBF8F3;
+  --param-light-secondary-color: #A9A9A9;
   --input-placeholder-color: #A9A9A9;
   --border-color: #DADADA;
   --button-fs: 1rem;
@@ -400,10 +401,6 @@ h5 {
 
 h6 {
   font-size: 0.6666666667rem;
-}
-
-p {
-  font-size: 1rem;
 }
 
 .container {
@@ -494,6 +491,7 @@ p {
 .list--horiz {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.8889rem;
 }
 .list--horiz .list__item {
@@ -537,9 +535,10 @@ p {
   justify-content: space-between;
   box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.12);
   padding: 1.1111rem;
-  min-width: 60%;
+  min-width: 80%;
+  max-width: 14.7222rem;
   z-index: var(--z-index1);
-  transform: translateX(-13.8889rem);
+  transform: translateX(-18.8889rem);
   transition: transform 0.3s;
 }
 .sidebar__list {
@@ -624,6 +623,34 @@ p {
 .sidebar.opened ~ .navbar__overlay {
   visibility: visible;
   opacity: 1;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  max-width: 28.945rem;
+}
+.hero__text {
+  color: var(--param-light-secondary-color);
+}
+.hero__button {
+  min-width: 100%;
+}
+.hero__list {
+  margin-top: 0.4444rem;
+}
+
+.header {
+  background: var(--bg-secondary-color);
+  padding-bottom: 2.7222rem;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.text-underline {
+  text-decoration: underline !important;
 }
 
 /*# sourceMappingURL=fibber.css.map */
