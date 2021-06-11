@@ -14,6 +14,8 @@
 
 //Objects 
 @use "./objects/container";
+@use "./objects/article-deck";
+@use "./objects/card-deck";
 
 // Components
 @use "./components/atoms/buttons";
@@ -25,8 +27,10 @@
 @use "./components/molecules/card";
 @use "./components/molecules/navbar";
 @use "./components/molecules/hero";
+@use "./components/molecules/article";
 
 @use "./components/organisms/header";
+@use "./components/organisms/section";
 
 // Utilities
 @use "./utilities/background";

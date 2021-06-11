@@ -412,6 +412,18 @@ h6 {
   margin-right: auto;
 }
 
+.article-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2222rem;
+}
+
 .button {
   padding: 0.8889em 1.5556rem;
   border: 0;
@@ -514,13 +526,13 @@ h6 {
   gap: 0.1111rem;
 }
 .profile__name {
-  font-size: 15px;
+  font-size: 0.8333rem;
   color: var(--primary-color);
   font-weight: 701;
   margin: 0;
 }
 .profile__subname {
-  font-size: 15px;
+  font-size: 0.8333rem;
   margin: 0;
 }
 
@@ -640,9 +652,36 @@ h6 {
   margin-top: 0.4444rem;
 }
 
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8889rem;
+}
+.article__image {
+  margin: 0;
+}
+.article__title {
+  margin: 0;
+}
+.article__text {
+  margin: 0;
+  color: var(--bg-light-secondary-color);
+}
+
 .header {
   background: var(--bg-secondary-color);
   padding-bottom: 2.7222rem;
+}
+
+.section {
+  margin-top: 4.4444rem;
+}
+.section__title {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.8889rem;
 }
 
 .bg-transparent {
