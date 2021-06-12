@@ -27,6 +27,11 @@
         transform: opacity 0.3s;
     }
 
+    &__buttons{
+        *:not(:first-child){
+            margin-left: 0.8889rem;
+        }
+    }
 }
 
 .sidebar.opened ~ .navbar__overlay{

@@ -390,7 +390,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -406,10 +406,8 @@ h6 {
 .container {
   width: 100%;
   max-width: 63.3333rem;
-  padding-left: 2.2222rem;
-  padding-right: 2.2222rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 2.2222rem;
 }
 
 .article-deck {
@@ -572,7 +570,7 @@ h6 {
   justify-content: space-between;
   box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.12);
   padding: 1.1111rem;
-  min-width: 80%;
+  width: 80%;
   max-width: 14.7222rem;
   z-index: var(--z-index1);
   transform: translateX(-18.8889rem);
@@ -655,6 +653,9 @@ h6 {
   visibility: hidden;
   opacity: 0;
   transform: opacity 0.3s;
+}
+.navbar__buttons *:not(:first-child) {
+  margin-left: 0.8889rem;
 }
 
 .sidebar.opened ~ .navbar__overlay {
@@ -789,6 +790,60 @@ h6 {
 
 .br-0 {
   border-right: 0 !important;
+}
+
+.hide-xs {
+  display: none !important;
+}
+
+.show-xs {
+  display: block !important;
+}
+
+@media screen and (min-width: 576px) {
+  .hide-sm {
+    display: none !important;
+  }
+
+  .show-sm {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hide-md {
+    display: none !important;
+  }
+
+  .show-md {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hide-lg {
+    display: none !important;
+  }
+
+  .show-lg {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hide-xl {
+    display: none !important;
+  }
+
+  .show-xl {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hide-xxl {
+    display: none !important;
+  }
+
+  .show-xxl {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=fibber.css.map */

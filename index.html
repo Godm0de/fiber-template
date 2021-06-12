@@ -11,51 +11,72 @@
 </head>
 
 <body>
-    <header class="header container">
-        <nav class="navbar">
-            <h3 class="navbar__logo">Fiber</h3>
-            <button class="navbar__toggle" id="navbarToggler">
-                <img class="navbar__icon" src="img/Hamburger Menu.svg" alt="">
-            </button>
-
-            <div class="sidebar" id="sidebar">
-                <ul class="sidebar__list">
-                    <li class="sidebar__item">
-                        <i class="material-icons sidebar__icon">people</i>
-                        <a href="" class="sidebar__link">Community</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <i class="material-icons sidebar__icon">forum</i>
-                        <a href="" class="sidebar__link">Pricing</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <i class="material-icons sidebar__icon">local_library</i>
-                        <a href="" class="sidebar__link">Features</a>
-                    </li>
-                </ul>
-                <div class="sidebar__buttons sidebar__icon">
-                    <button class="button button--light-primary">Sign In</button>
+    <header class="header">
+        <div class="container">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <h3 class="navbar__logo">Fiber</h3>
+                <div class="hide-xs show-md">
+                    <ul class="list list--horiz">
+                        <li class="list__item"><a href="" class="list__link">Community</a></li>
+                        <li class="list__item"><a href="" class="list__link">Pricing</a></li>
+                        <li class="list__item"><a href="" class="list__link">Features</a></li>
+                    </ul>
+                </div>
+                <div class="navbar__buttons hide-xs show-md">
+                    <button class="button button--light-primary bg-transparent">Sign In</button>
                     <button class="button button--primary">Sign Up</button>
                 </div>
-            </div>
-            <div class="navbar__overlay" id="overlay"></div>
-        </nav>
-        <section class="hero">
-            <img src="img/hero-Illustration.png" alt="" class="hero__image">
-            <h2 class="hero__title">Create your portfolio in minutes.</h2>
-            <article class="hero__param">
-                <p class="hero__text">With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
-                <button class="button button--primary hero__button">Start Free Trial</button>
-                <button class="button button--light-primary hero__button bg-transparent text-underline">View Examples</button>
-                <ul class="list list--horiz hero__list">
-                    <li class="list__item"><span class="list__bullet"></span>No Credit Card Required</li>
-                    <li class="list__item"><span class="list__bullet"></span>10 Free Templates</li>
-                </ul>
-            </article>
-        </section>
+                <button class="navbar__toggle hide-md" id="navbarToggler">
+                    <img class="navbar__icon" src="img/Hamburger Menu.svg" alt="">
+                </button>
+
+                <!-- Sidebar used in responsive -->
+                <div class="sidebar" id="sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <i class="material-icons sidebar__icon">people</i>
+                            <a href="" class="sidebar__link">Community</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <i class="material-icons sidebar__icon">forum</i>
+                            <a href="" class="sidebar__link">Pricing</a>
+                        </li>
+                        <li class="sidebar__item">
+                            <i class="material-icons sidebar__icon">local_library</i>
+                            <a href="" class="sidebar__link">Features</a>
+                        </li>
+                    </ul>
+                    <div class="sidebar__buttons sidebar__icon">
+                        <button class="button button--light-primary">Sign In</button>
+                        <button class="button button--primary">Sign Up</button>
+                    </div>
+                </div>
+                <div class="navbar__overlay" id="overlay"></div>
+            </nav>
+
+            <!-- Hero section -->
+            <section class="hero">
+                <img src="img/hero-Illustration.png" alt="" class="hero__image">
+                <h2 class="hero__title">Create your portfolio in minutes.</h2>
+                <article class="hero__param">
+                    <p class="hero__text">With Fiber, you can setup your own personal portfolio in minutes with dozens
+                        of
+                        premade, beautiful templates.</p>
+                    <button class="button button--primary hero__button">Start Free Trial</button>
+                    <button class="button button--light-primary hero__button bg-transparent text-underline">View
+                        Examples</button>
+                    <ul class="list list--horiz hero__list">
+                        <li class="list__item"><span class="list__bullet"></span>No Credit Card Required</li>
+                        <li class="list__item"><span class="list__bullet"></span>10 Free Templates</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
     </header>
 
     <main>
+        <!-- Articles section -->
         <section class="container section">
             <h4 class="section__title">Why Fiber?</h4>
             <h2 class="section__subtitle">A good portfolio means good employability.</h2>
@@ -64,26 +85,31 @@
                 <div class="article">
                     <img src="img/time.svg" class="article__image" alt="">
                     <h4 class="article__title">Build in minutes</h4>
-                    <p class="article__text text-light-secondary">With a selection of premade templates, you can build out a portfolio in less than 10 minutes.</p>
+                    <p class="article__text text-light-secondary">With a selection of premade templates, you can build
+                        out a portfolio in less than 10 minutes.</p>
                 </div>
                 <div class="article">
                     <img src="img/code.svg" class="article__image" alt="">
                     <h4 class="article__title">Add custom CSS</h4>
-                    <p class="article__text text-light-secondary">Customize your personal portfolio even more with the ability to add your own custom CSS styles.</p>
+                    <p class="article__text text-light-secondary">Customize your personal portfolio even more with the
+                        ability to add your own custom CSS styles.</p>
                 </div>
                 <div class="article">
                     <img src="img/allSizes.svg" class="article__image" alt="">
                     <h4 class="article__title">Responsive</h4>
-                    <p class="article__text text-light-secondary">All Fiber templates are fully responsive to ensure the experience is seemless across all devices.</p>
+                    <p class="article__text text-light-secondary">All Fiber templates are fully responsive to ensure the
+                        experience is seemless across all devices.</p>
                 </div>
             </article>
         </section>
 
+        <!-- Information textbox -->
         <section class="container section">
             <div class="textbox textbox--primary pb-0 flex">
                 <article class="article">
                     <h2 class="article__title text-light">Diversify your portfolio.</h2>
-                    <p class="article__text">Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-step guide.</p>
+                    <p class="article__text">Create an even more impressive portfolio by creating case studies for your
+                        projects. Simply follow our step-by-step guide.</p>
                     <button class="button button--light-primary">Start Free Trial</button>
                 </article>
 
@@ -91,6 +117,8 @@
 
             </div>
         </section>
+
+        <!-- Cards section -->
         <section class="container section">
             <article class="card-deck">
                 <div class="card">
@@ -104,7 +132,8 @@
                         </div>
                     </div>
                     <div class="card__body">
-                        <p class="card__text">Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
+                        <p class="card__text">Setting up my portfolio with Fiber took no more than 10 minutes. Since
+                            then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
                         <button class="button button--outline-primary">View Sarah’s Portfolio</button>
                     </div>
                 </div>
@@ -120,7 +149,8 @@
                         </div>
                     </div>
                     <div class="card__body">
-                        <p class="card__text">I have been getting A LOT of leads ever since I used Fiber’s premade templates, now I just need to work on my case studies and I’ll be ready to go!</p>
+                        <p class="card__text">I have been getting A LOT of leads ever since I used Fiber’s premade
+                            templates, now I just need to work on my case studies and I’ll be ready to go!</p>
                         <button class="button button--outline-primary">View Sarah’s Portfolio</button>
                     </div>
                 </div>
@@ -136,21 +166,26 @@
                         </div>
                     </div>
                     <div class="card__body">
-                        <p class="card__text">I only just started freelancing this year and I have already made more than I ever made in my full-time job. The templates are just so amazing.</p>
+                        <p class="card__text">I only just started freelancing this year and I have already made more
+                            than I ever made in my full-time job. The templates are just so amazing.</p>
                         <button class="button button--outline-primary">View Sarah’s Portfolio</button>
                     </div>
                 </div>
             </article>
         </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <section class="footer__section container">
+            <!-- Article -->
             <article class="article footer__article">
                 <h3 class="article__title">Fiber</h3>
-                <p class="article__text text-light-secondary">With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
+                <p class="article__text text-light-secondary">With Fiber, you can setup your own personal portfolio in
+                    minutes with dozens of premade, beautiful templates.</p>
                 <p class="footer__copyright text-light-secondary">Made with ❤️ in the Netherlands.</p>
             </article>
 
+            <!-- Links list-->
             <article class="article footer__article">
                 <h3 class="article__title">Sitemap</h3>
                 <ul class="list text-light-secondary">
@@ -161,6 +196,7 @@
                 </ul>
             </article>
 
+            <!-- Links list-->
             <article class="article footer__article">
                 <h3 class="article__title">Resources</h3>
                 <ul class="list text-light-secondary">
@@ -170,6 +206,7 @@
                 </ul>
             </article>
 
+            <!-- Links list-->
             <article class="article footer__article">
                 <h3 class="article__title">Company</h3>
                 <ul class="list text-light-secondary">
@@ -179,6 +216,7 @@
                 </ul>
             </article>
 
+            <!-- Links list-->
             <article class="article footer__article">
                 <h3 class="article__title">Portfolios</h3>
                 <ul class="list text-light-secondary">

@@ -1,0 +1,14 @@
+@use "../tools/mixins/media-screen" as media;
+@use "../settings/breakpoints";
+
+@each $br, $val in breakpoints.$breakpoints {
+    @include media.media-screen($val){
+        .hide-#{$br}{
+            display: none !important;
+        }
+
+        .show-#{$br}{
+            display: block !important;
+        }
+    }
+}
