@@ -536,6 +536,15 @@ h6 {
   margin: 0;
 }
 
+.textbox {
+  padding: 2.7778rem 2.1111rem;
+  border-radius: 0.5556rem;
+}
+.textbox--primary {
+  background: var(--primary-color);
+  color: var(--param-dark-color);
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -667,7 +676,6 @@ h6 {
 }
 .article__text {
   margin: 0;
-  color: var(--bg-light-secondary-color);
 }
 
 .header {
@@ -690,6 +698,67 @@ h6 {
 
 .text-underline {
   text-decoration: underline !important;
+}
+
+.text-light-secondary {
+  color: var(--param-light-secondary-color) !important;
+}
+
+.text-light {
+  color: var(--title-dark-color) !important;
+}
+
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.bt-0 {
+  border-top: 0 !important;
+}
+
+.bb-0 {
+  border-bottom: 0 !important;
+}
+
+.bl-0 {
+  border-left: 0 !important;
+}
+
+.br-0 {
+  border-right: 0 !important;
 }
 
 /*# sourceMappingURL=fibber.css.map */

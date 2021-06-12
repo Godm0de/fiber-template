@@ -22,6 +22,7 @@
 @use "./components/atoms/input";
 @use "./components/atoms/list";
 @use "./components/atoms/profile";
+@use "./components/atoms/textbox";
 
 @use "./components/molecules/sidebar";
 @use "./components/molecules/card";
@@ -35,3 +36,5 @@
 // Utilities
 @use "./utilities/background";
 @use "./utilities/text";
+@use "./utilities/images";
+@use "./utilities/box-model";
