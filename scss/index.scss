@@ -16,6 +16,7 @@
 @use "./objects/container";
 @use "./objects/article-deck";
 @use "./objects/card-deck";
+@use "./objects/flex";
 
 // Components
 @use "./components/atoms/buttons";
@@ -32,6 +33,7 @@
 
 @use "./components/organisms/header";
 @use "./components/organisms/section";
+@use "./components/organisms/footer";
 
 // Utilities
 @use "./utilities/background";

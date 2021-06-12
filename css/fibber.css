@@ -424,6 +424,14 @@ h6 {
   gap: 2.2222rem;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 57px;
+}
+
 .button {
   padding: 0.8889em 1.5556rem;
   border: 0;
@@ -490,6 +498,14 @@ h6 {
 }
 .list__item:not(:last-child) {
   margin-bottom: 0.8889rem;
+}
+.list__link {
+  text-decoration: none;
+  color: initial;
+}
+.list__link:hover, .list__link:visited, .list__link:active {
+  text-decoration: none;
+  color: inherit;
 }
 .list__bullet {
   display: inline-block;
@@ -690,6 +706,20 @@ h6 {
   color: var(--primary-color);
   margin-top: 0;
   margin-bottom: 0.8889rem;
+}
+
+.footer {
+  background: var(--bg-secondary-color);
+  margin-top: 3.2222rem;
+  padding-top: 3.6667rem;
+  padding-bottom: 3.6667rem;
+}
+.footer__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2222rem;
 }
 
 .bg-transparent {
