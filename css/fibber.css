@@ -411,23 +411,31 @@ h6 {
 }
 
 .article-deck {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11.3889rem, 1fr));
+  gap: 2.2222rem;
+  margin-top: 2.6667rem;
 }
 
 .card-deck {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11.3889rem, 1fr));
   gap: 2.2222rem;
 }
 
-.flex {
+.info-card {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  gap: 57px;
+  align-items: center;
+}
+.info-card .article {
+  flex-basis: 416px;
+  margin-bottom: 47px;
+  flex-grow: 1;
+}
+.info-card .image-responsive {
+  max-width: 458px;
 }
 
 .button {
@@ -617,7 +625,6 @@ h6 {
   flex-direction: column;
   padding: 1.2778rem;
   border: 1px solid var(--border-color);
-  max-width: 19.8944rem;
 }
 .card__header {
   margin-bottom: 0.5806rem;
@@ -630,14 +637,16 @@ h6 {
 }
 
 .navbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
 }
 .navbar__toggle {
   display: flex;
   align-items: center;
   padding: 0.2778em;
+  grid-column: 3/4;
+  justify-self: flex-end;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -654,6 +663,12 @@ h6 {
   opacity: 0;
   transform: opacity 0.3s;
 }
+.navbar__list {
+  justify-self: center;
+}
+.navbar__buttons {
+  justify-self: flex-end;
+}
 .navbar__buttons *:not(:first-child) {
   margin-left: 0.8889rem;
 }
@@ -663,16 +678,31 @@ h6 {
   opacity: 1;
 }
 
+.hero {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 .hero__image {
   width: 100%;
   height: auto;
-  max-width: 28.945rem;
+}
+@media screen and (max-width: 470px) {
+  .hero__image {
+    grid-row: 1/2;
+  }
 }
 .hero__text {
   color: var(--param-light-secondary-color);
 }
-.hero__button {
-  min-width: 100%;
+.hero__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero__buttons .button {
+  flex-grow: 1;
 }
 .hero__list {
   margin-top: 0.4444rem;
@@ -719,8 +749,13 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   gap: 2.2222rem;
+}
+.footer__article {
+  align-self: flex-start;
+}
+.footer__article > .article__text {
+  max-width: 29ch;
 }
 
 .bg-transparent {

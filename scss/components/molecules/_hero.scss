@@ -1,16 +1,35 @@
 .hero{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+    &__param{
+
+    }
+
     &__image {
         width: 100%;
         height: auto;
-        max-width: 28.945rem;
+
+        @media screen and (max-width: 470px) {
+            grid-row: 1/2;
+        }
     }
 
     &__text{
         color: var(--param-light-secondary-color);
     }
 
-    &__button{
-        min-width: 100%;
+    &__buttons{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+        .button{
+            flex-grow: 1;
+        }
     }
 
     &__list{
