@@ -8,6 +8,7 @@
     <title>Fiber</title>
     <link rel="stylesheet" href="css/fibber.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -58,13 +59,29 @@
             <!-- Hero section -->
             <section class="hero">
                 <article class="hero__param">
+                    <div class="hero__rating">
+                        <div class="rating">
+                            <input type="radio" name="rating" class="rating__input" id="rate-5">
+                            <label for="rate-5" value="5" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-4">
+                            <label for="rate-4" value="4" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-3">
+                            <label for="rate-3" value="3" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-2">
+                            <label for="rate-2" value="2" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-1">
+                            <label for="rate-1" value="1" class="rating__label fa fa-star"></label>
+                        </div>
+
+                    </div>
                     <h2 class="hero__title">Create your portfolio in minutes.</h2>
                     <p class="hero__text">With Fiber, you can setup your own personal portfolio in minutes with dozens
                         of
                         premade, beautiful templates.</p>
                     <div class="hero__buttons">
                         <button class="button button--primary">Start Free Trial</button>
-                        <button class="button button--light-primary bg-transparent text-underline">View Examples</button>
+                        <button class="button button--light-primary bg-transparent text-underline">View
+                            Examples</button>
                     </div>
                     <ul class="list list--horiz hero__list">
                         <li class="list__item"><span class="list__bullet"></span>No Credit Card Required</li>
@@ -86,7 +103,7 @@
 
             <article class="article-deck">
                 <div class="article">
-                    <img src="img/time.svg" class="article__image" alt="">
+                    <img src="img/time.svg" class="article__image" alt="Icon image representing an purple watch">
                     <h4 class="article__title">Build in minutes</h4>
                     <p class="article__text text-light-secondary">With a selection of premade templates, you can build
                         out a portfolio in less than 10 minutes.</p>
