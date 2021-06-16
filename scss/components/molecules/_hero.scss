@@ -2,6 +2,8 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    padding-bottom: 7.8889rem;
+    padding-top: 4.1667rem;
 
     &__rating{
         display: flex;
@@ -13,6 +15,7 @@
         width: 100%;
         height: auto;
 
+        justify-self: flex-end;
         @media screen and (max-width: 470px) {
             grid-row: 1/2;
         }

@@ -703,6 +703,8 @@ h6 {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-bottom: 7.8889rem;
+  padding-top: 4.1667rem;
 }
 .hero__rating {
   display: flex;
@@ -712,6 +714,7 @@ h6 {
 .hero__image {
   width: 100%;
   height: auto;
+  justify-self: flex-end;
 }
 @media screen and (max-width: 470px) {
   .hero__image {
@@ -753,7 +756,6 @@ h6 {
 
 .header {
   background: var(--bg-secondary-color);
-  padding-bottom: 2.7222rem;
 }
 
 .section {
@@ -772,9 +774,8 @@ h6 {
   padding-bottom: 3.6667rem;
 }
 .footer__section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.0556rem, 1fr));
   gap: 2.2222rem;
 }
 .footer__article {
