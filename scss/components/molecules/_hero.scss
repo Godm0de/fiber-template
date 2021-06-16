@@ -3,8 +3,10 @@
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 
-    &__param{
-
+    &__rating{
+        display: flex;
+        align-items: center;
+        gap: 0.8889rem;
     }
 
     &__image {

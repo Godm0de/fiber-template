@@ -703,6 +703,11 @@ h6 {
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+.hero__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.8889rem;
+}
 .hero__image {
   width: 100%;
   height: auto;
