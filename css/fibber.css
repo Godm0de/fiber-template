@@ -778,11 +778,14 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(7.0556rem, 1fr));
   gap: 2.2222rem;
 }
-.footer__article {
+.footer__article, .footer__links {
   align-self: flex-start;
 }
-.footer__article > .article__text {
+.footer__article > .article__text, .footer__links > .article__text {
   max-width: 29ch;
+}
+.footer__article {
+  grid-column: 1/3;
 }
 
 .bg-transparent {

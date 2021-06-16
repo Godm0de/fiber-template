@@ -11,11 +11,15 @@
         gap: 2.2222rem;
     }
 
-    &__article{
+    &__article, &__links{
         align-self: flex-start;
 
         > .article__text{
             max-width: 29ch;
         }
+    }
+
+    &__article{
+        grid-column: 1/3;
     }
 }
