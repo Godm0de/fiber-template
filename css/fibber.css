@@ -643,17 +643,18 @@ h6 {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1.2778rem;
   border: 1px solid var(--border-color);
 }
 .card__header {
   margin-bottom: 0.5806rem;
 }
-.card__body .button {
-  min-width: 100%;
-}
 .card__text {
   margin-bottom: 0.8889rem;
+}
+.card__footer .button {
+  min-width: 100%;
 }
 
 .navbar {
