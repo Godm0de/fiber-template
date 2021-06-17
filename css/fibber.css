@@ -711,6 +711,9 @@ h6 {
   align-items: center;
   gap: 0.8889rem;
 }
+.hero__reviews {
+  margin: 0.4444rem 0;
+}
 .hero__image {
   width: 100%;
   height: auto;
@@ -721,12 +724,16 @@ h6 {
     grid-row: 1/2;
   }
 }
+.hero__title {
+  margin: 0.4444rem 0;
+}
 @media screen and (max-width: 470px) {
   .hero__title {
     font-size: 36px;
   }
 }
 .hero__text {
+  margin: 0 0 0.4444rem 0;
   color: var(--param-light-secondary-color);
 }
 .hero__buttons {
@@ -734,6 +741,7 @@ h6 {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1.3333rem;
 }
 .hero__buttons .button {
   flex-grow: 1;

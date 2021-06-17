@@ -11,6 +11,10 @@
         gap: 0.8889rem;
     }
 
+    &__reviews{
+        margin: 0.4444rem 0;
+    }
+
     &__image {
         width: 100%;
         height: auto;
@@ -23,12 +27,14 @@
     }
     
     &__title{
+        margin: 0.4444rem 0;
         @media screen and (max-width: 470px) {
             font-size: 36px;
         }
     }
 
     &__text{
+        margin:0 0 0.4444rem 0;
         color: var(--param-light-secondary-color);
     }
 
@@ -37,6 +43,7 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
+        margin-bottom: 1.3333rem;
 
 
         .button{
