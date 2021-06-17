@@ -21,5 +21,9 @@
 
     &__article{
         grid-column: 1/3;
+
+        @media screen and (max-width: 769px){
+            grid-column: 1/2;
+        }
     }
 }

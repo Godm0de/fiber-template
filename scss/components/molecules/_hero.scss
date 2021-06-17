@@ -16,8 +16,15 @@
         height: auto;
 
         justify-self: flex-end;
+
         @media screen and (max-width: 470px) {
             grid-row: 1/2;
+        }
+    }
+    
+    &__title{
+        @media screen and (max-width: 470px) {
+            font-size: 36px;
         }
     }
 
