@@ -613,6 +613,37 @@ h6 {
     opacity: 0;
   }
 }
+#chronometer:hover #hand {
+  transform: rotate(360deg);
+  transform-origin: center 56%;
+  transition: transform 1s linear;
+  transition-delay: 0.5s;
+}
+
+#code:hover #right-sign {
+  transform: rotateX(180deg);
+  transform-origin: center;
+  transition: transform 0.25s linear;
+  transition-delay: 0.5s;
+}
+#code:hover #left-sign {
+  transform: rotateX(180deg);
+  transform-origin: center;
+  transition: transform 0.25s linear;
+  transition-delay: 0.75s;
+}
+
+#responsive:hover #phone {
+  transform: translateX(50px);
+  transition: transform 0.5s linear;
+  transition-delay: 0.5s;
+}
+#responsive:hover #tablet {
+  transform: translateX(5px);
+  transition: transform 0.5s linear;
+  transition-delay: 0.5s;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
