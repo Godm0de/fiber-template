@@ -1,0 +1,27 @@
+.ripple{
+    position: relative;
+    overflow: hidden;
+
+    &__element{
+        position:absolute;
+        background: #FFFFFF;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        border-radius: 50%;
+        animation: ripple-animation .4s cubic-bezier(.11,.39,.49,.4);
+    }
+}
+
+@keyframes ripple-animation{
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
