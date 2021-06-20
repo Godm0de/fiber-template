@@ -1,9 +1,16 @@
 //Breakpoints
+$_xs-bp: 0;
+$_sm-bp: 576px;
+$_md-bp: 769px;
+$_lg-bp: 992px;
+$_xl-bp: 1200px;
+$_xxl-bp: 1400px;
+
 $breakpoints: (
   xs: 0,
   sm: 576px,
   md: 769px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
 );

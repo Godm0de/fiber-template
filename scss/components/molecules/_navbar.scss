@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -9,7 +9,7 @@
         padding: 0.2778em;
         grid-column: 3/4;
         justify-self: flex-end;
-        
+
         background: transparent;
         border: 0;
         border-radius: 50%;
@@ -18,12 +18,12 @@
         cursor: pointer;
     }
 
-    &__toggle:active{
+    &__toggle:active {
         background: var(--border-color);
     }
 
-    &__overlay{
-        position:fixed;
+    &__overlay {
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
@@ -35,19 +35,19 @@
         transform: opacity 0.3s;
     }
 
-    &__list{
+    &__list {
         justify-self: center;
     }
 
-    &__buttons{
+    &__buttons {
         justify-self: flex-end;
-        *:not(:first-child){
+        *:not(:first-child) {
             margin-left: 0.8889rem;
         }
     }
 }
 
-.sidebar.opened ~ .navbar__overlay{
+.sidebar.opened ~ .navbar__overlay {
     visibility: visible;
     opacity: 1;
-}   
+}

@@ -1,16 +1,15 @@
-
 // Fiber Pallete
 $_black: #000000;
-$_white: #FFFFFF;
-$_blue:#4D13D1;
-$_grey:#DADADA;
-$_darker-grey: #A9A9A9;
-$_yellowish-white:#FBF8F3;
-$_seagreen:#45B19E;
-$_dark-grey:#4F4F4F;
-$_soft-lilac:#E5DDFD;
-$_cape:#FDE3A7;
-$_white2:#FDFDFD;
+$_white: #ffffff;
+$_blue: #4d13d1;
+$_grey: #dadada;
+$_darker-grey: #a9a9a9;
+$_yellowish-white: #fbf8f3;
+$_seagreen: #45b19e;
+$_dark-grey: #4f4f4f;
+$_soft-lilac: #e5ddfd;
+$_cape: #fde3a7;
+$_white2: #fdfdfd;
 
 // UI Colors
 $primary-color: $_blue;
@@ -29,3 +28,9 @@ $button-text-color: $_yellowish-white;
 $input-placeholder-color: $_darker-grey;
 
 $border-color: $_grey;
+
+// Theme colors (primary, secondary, info, sucess, warming, alert)
+$theme-colors: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+);

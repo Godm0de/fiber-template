@@ -1,17 +1,17 @@
-.hero{
+.hero {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding-bottom: 7.8889rem;
     padding-top: 4.1667rem;
 
-    &__rating{
+    &__rating {
         display: flex;
         align-items: center;
         gap: 0.8889rem;
     }
 
-    &__reviews{
+    &__reviews {
         margin: 0.4444rem 0;
     }
 
@@ -25,33 +25,32 @@
             grid-row: 1/2;
         }
     }
-    
-    &__title{
+
+    &__title {
         margin: 0.4444rem 0;
         @media screen and (max-width: 470px) {
             font-size: 36px;
         }
     }
 
-    &__text{
-        margin:0 0 0.4444rem 0;
+    &__text {
+        margin: 0 0 0.4444rem 0;
         color: var(--param-light-secondary-color);
     }
 
-    &__buttons{
+    &__buttons {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 1.3333rem;
 
-
-        .button{
+        .button {
             flex-grow: 1;
         }
     }
 
-    &__list{
+    &__list {
         margin-top: 0.4444rem;
     }
 }

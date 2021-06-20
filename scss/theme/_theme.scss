@@ -6,10 +6,10 @@
     // Color Scheme
     --primary-color: #{colors.$primary-color};
     --secondary-color: #{colors.$secondary-color};
-    
+
     --bg-primary-color: #{colors.$bg-primary-color};
     --bg-secondary-color: #{colors.$bg-secondary-color};
-    
+
     --title-light-color: #{colors.$title-light-color};
     --param-light-color: #{colors.$param-light-color};
     --param-dark-strong-color: #{colors.$param-dark-strong-color};
@@ -22,7 +22,7 @@
     --border-color: #{colors.$border-color};
 
     // Font size
-    --button-fs:  #{typography.$fs-18};
+    --button-fs: #{typography.$fs-18};
 
     // z-index
     --z-index1: #{zindex.$z-index1};

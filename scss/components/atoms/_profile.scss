@@ -3,26 +3,26 @@
     align-items: center;
     gap: 0.7078rem;
 
-    &__avatar{
+    &__avatar {
         max-width: 3rem;
         max-height: 3rem;
         border-radius: 50%;
     }
 
-    &__info{
+    &__info {
         display: flex;
         flex-direction: column;
         gap: 0.1111rem;
     }
 
-    &__name{
+    &__name {
         font-size: 0.8333rem;
         color: var(--primary-color);
         font-weight: 701;
         margin: 0;
     }
 
-    &__subname{
+    &__subname {
         font-size: 0.8333rem;
         margin: 0;
     }

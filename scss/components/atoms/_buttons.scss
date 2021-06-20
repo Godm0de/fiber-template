@@ -13,31 +13,31 @@
         outline: none;
     }
 
-    &--primary{
+    &--primary {
         color: var(--button-text-color);
         background-color: var(--primary-color);
 
-        &:hover{
+        &:hover {
             background: lighten(colors.$primary-color, 10%);
         }
     }
 
-    &--light-primary{
+    &--light-primary {
         color: var(--primary-color);
-        background-color: #FFFFFF;
+        background-color: #ffffff;
 
         &:hover {
-            background: darken(#FFFFFF, 10%);
+            background: darken(#ffffff, 10%);
         }
     }
 
-    &--outline-primary{
+    &--outline-primary {
         border: 1px solid var(--border-color);
         color: var(--primary-color);
-        background-color: #FFFFFF;
-        
+        background-color: #ffffff;
+
         &:hover {
-            background: darken(#FFFFFF, 10%);
+            background: darken(#ffffff, 10%);
         }
     }
 }

@@ -1,8 +1,8 @@
-@mixin media-screen ($breakpoint){
-    @if ($breakpoint == 0){
+@mixin media-screen($breakpoint) {
+    @if ($breakpoint == 0) {
         @content;
-    }@else{
-        @media screen and (min-width: $breakpoint){
+    } @else {
+        @media screen and (min-width: $breakpoint) {
             @content;
         }
     }

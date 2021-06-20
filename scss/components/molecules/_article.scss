@@ -1,20 +1,19 @@
-.article{
+.article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.8889rem;
 
-    &__image{
+    &__image {
         margin: 0;
     }
 
-    &__title{
+    &__title {
         margin: 0;
     }
 
-    &__text{
+    &__text {
         margin: 0;
     }
-
 }
