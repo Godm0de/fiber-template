@@ -11,6 +11,7 @@
     &__label {
         color: #a9a9a9;
         transition: all 0.2s ease;
+        cursor: pointer;
     }
 
     &__input:not(:checked) ~ &__label:hover,

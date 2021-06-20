@@ -33,4 +33,6 @@ $border-color: $_grey;
 $theme-colors: (
     primary: $primary-color,
     secondary: $secondary-color,
+    light: $_grey,
+    dark: $_black,
 );

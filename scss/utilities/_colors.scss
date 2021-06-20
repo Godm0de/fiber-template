@@ -1,0 +1,16 @@
+// Background
+.bg-transparent {
+    background: transparent !important;
+}
+
+// Text color
+.text-primary{
+    color: var(--primary-color) !important;
+}
+.text-light-secondary {
+    color: var(--param-light-secondary-color) !important;
+}
+
+.text-light {
+    color: var(--title-dark-color) !important;
+}

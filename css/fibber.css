@@ -447,16 +447,6 @@ h6 {
   font-weight: bold;
   cursor: pointer;
 }
-.button:active {
-  outline: none;
-}
-.button--primary {
-  color: var(--button-text-color);
-  background-color: var(--primary-color);
-}
-.button--primary:hover {
-  background: #662bec;
-}
 .button--light-primary {
   color: var(--primary-color);
   background-color: #ffffff;
@@ -464,13 +454,116 @@ h6 {
 .button--light-primary:hover {
   background: #e6e6e6;
 }
+.button--invert-primary {
+  color: #4d13d1;
+  background-color: var(--param-light-color);
+}
+.button--invert-primary:hover {
+  background: #e6e6e6;
+}
+.button--invert-secondary {
+  color: #45b19e;
+  background-color: var(--param-light-color);
+}
+.button--invert-secondary:hover {
+  background: #e6e6e6;
+}
+.button--invert-light {
+  color: #dadada;
+  background-color: var(--param-light-color);
+}
+.button--invert-light:hover {
+  background: #e6e6e6;
+}
+.button--invert-dark {
+  color: #000000;
+  background-color: var(--param-light-color);
+}
+.button--invert-dark:hover {
+  background: #e6e6e6;
+}
+.button--primary {
+  color: var(--param-light-color);
+  background-color: #4d13d1;
+}
+.button--primary:hover {
+  background: #662bec;
+}
+.button--secondary {
+  color: var(--param-light-color);
+  background-color: #45b19e;
+}
+.button--secondary:hover {
+  background: #66c3b3;
+}
+.button--light {
+  color: var(--param-light-color);
+  background-color: #dadada;
+}
+.button--light:hover {
+  background: #f4f4f4;
+}
+.button--dark {
+  color: var(--param-light-color);
+  background-color: #000000;
+}
+.button--dark:hover {
+  background: #1a1a1a;
+}
 .button--outline-primary {
-  border: 1px solid var(--border-color);
-  color: var(--primary-color);
-  background-color: #ffffff;
+  border: 1px solid #4d13d1;
+  color: #4d13d1;
+  background-color: transparent;
 }
 .button--outline-primary:hover {
+  color: var(--param-light-color);
   background: #e6e6e6;
+}
+.button--outline-secondary {
+  border: 1px solid #45b19e;
+  color: #45b19e;
+  background-color: transparent;
+}
+.button--outline-secondary:hover {
+  color: var(--param-light-color);
+  background: #e6e6e6;
+}
+.button--outline-light {
+  border: 1px solid #dadada;
+  color: #dadada;
+  background-color: transparent;
+}
+.button--outline-light:hover {
+  color: var(--param-light-color);
+  background: #e6e6e6;
+}
+.button--outline-dark {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: transparent;
+}
+.button--outline-dark:hover {
+  color: var(--param-light-color);
+  background: #e6e6e6;
+}
+.button--transparent-primary {
+  color: #4d13d1;
+  background-color: transparent;
+}
+.button--transparent-secondary {
+  color: #45b19e;
+  background-color: transparent;
+}
+.button--transparent-light {
+  color: #dadada;
+  background-color: transparent;
+}
+.button--transparent-dark {
+  color: #000000;
+  background-color: transparent;
+}
+.button--large {
+  min-width: 100%;
 }
 
 .input {
@@ -564,7 +657,19 @@ h6 {
   border-radius: 0.5556rem;
 }
 .textbox--primary {
-  background: var(--primary-color);
+  background: #4d13d1;
+  color: var(--param-dark-color);
+}
+.textbox--secondary {
+  background: #45b19e;
+  color: var(--param-dark-color);
+}
+.textbox--light {
+  background: #dadada;
+  color: var(--param-dark-color);
+}
+.textbox--dark {
+  background: #000000;
   color: var(--param-dark-color);
 }
 
@@ -580,6 +685,7 @@ h6 {
 .rating__label {
   color: #a9a9a9;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 .rating__input:not(:checked) ~ .rating__label:hover, .rating__input:not(:checked) ~ .rating__label:hover ~ .rating__label {
   color: #ff9529;
@@ -588,30 +694,8 @@ h6 {
   color: #ff9529;
 }
 
-.ripple {
-  position: relative;
-  overflow: hidden;
-}
-.ripple__element {
-  position: absolute;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  border-radius: 50%;
-  animation: ripple-animation 0.4s cubic-bezier(0.11, 0.39, 0.49, 0.4);
-}
-
-@keyframes ripple-animation {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 0.5;
-  }
-  100% {
-    width: 500px;
-    height: 500px;
-    opacity: 0;
-  }
+#chronometer:hover {
+  cursor: pointer;
 }
 #chronometer:hover #hand {
   transform: rotate(360deg);
@@ -620,6 +704,9 @@ h6 {
   transition-delay: 0.5s;
 }
 
+#code:hover {
+  cursor: pointer;
+}
 #code:hover #right-sign {
   transform: rotateX(180deg);
   transform-origin: center;
@@ -633,6 +720,9 @@ h6 {
   transition-delay: 0.75s;
 }
 
+#responsive:hover {
+  cursor: pointer;
+}
 #responsive:hover #phone {
   transform: translateX(50px);
   transition: transform 0.5s linear;
@@ -700,7 +790,6 @@ h6 {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 1.2778rem;
   border: 1px solid var(--border-color);
 }
@@ -710,8 +799,8 @@ h6 {
 .card__text {
   margin-bottom: 0.8889rem;
 }
-.card__footer .button {
-  min-width: 100%;
+.card__footer {
+  justify-self: flex-end;
 }
 
 .navbar {
@@ -872,6 +961,18 @@ h6 {
   background: transparent !important;
 }
 
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-light-secondary {
+  color: var(--param-light-secondary-color) !important;
+}
+
+.text-light {
+  color: var(--title-dark-color) !important;
+}
+
 .text-underline {
   text-decoration: underline !important;
 }
@@ -988,6 +1089,31 @@ h6 {
 
   .show-xxl {
     display: block !important;
+  }
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple__element {
+  position: absolute;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: ripple-animation 0.4s cubic-bezier(0.11, 0.39, 0.49, 0.4);
+}
+
+@keyframes ripple-animation {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
   }
 }
 
