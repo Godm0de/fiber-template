@@ -13,9 +13,8 @@
 
 //Objects
 @use "./objects/container";
-@use "./objects/article-deck";
-@use "./objects/card-deck";
 @use './objects/info-card';
+@use "./objects/gallery";
 
 // Components
 @use "./components/atoms/buttons";

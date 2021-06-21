@@ -411,19 +411,6 @@ h6 {
   padding: 0 2.2222rem;
 }
 
-.article-deck {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11.3889rem, 1fr));
-  gap: 2.2222rem;
-  margin-top: 2.6667rem;
-}
-
-.card-deck {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11.3889rem, 1fr));
-  gap: 2.2222rem;
-}
-
 .info-card {
   display: flex;
   flex-wrap: wrap;
@@ -437,6 +424,12 @@ h6 {
 }
 .info-card .image-responsive {
   max-width: 458px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11.3889rem, 1fr));
+  gap: 2.2222rem;
 }
 
 .button {
@@ -789,6 +782,7 @@ h6 {
 
 .card {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding: 1.2778rem;
   border: 1px solid var(--border-color);
