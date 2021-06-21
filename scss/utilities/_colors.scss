@@ -3,6 +3,10 @@
     background: transparent !important;
 }
 
+.bg-primary{
+    background: var(--primary-color);
+}
+
 // Text color
 .text-primary{
     color: var(--primary-color) !important;
