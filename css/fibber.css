@@ -829,7 +829,7 @@ h6 {
   opacity: 0;
   transform: opacity 0.3s;
 }
-.navbar__list {
+.navbar__nav {
   justify-self: center;
 }
 .navbar__buttons {
@@ -850,6 +850,7 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-bottom: 7.8889rem;
   padding-top: 4.1667rem;
+  background: var(--bg-secondary-color);
 }
 .hero__rating {
   display: flex;
