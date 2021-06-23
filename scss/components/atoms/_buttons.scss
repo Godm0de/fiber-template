@@ -1,5 +1,6 @@
 @use "../../settings/colors";
 
+
 .button {
     padding: 0.8889em 1.5556rem;
     border: 0;
@@ -9,35 +10,58 @@
 
     cursor: pointer;
 
-    &:active {
-        outline: none;
-    }
-
-    &--primary{
-        color: var(--button-text-color);
-        background-color: var(--primary-color);
-
-        &:hover{
-            background: lighten(colors.$primary-color, 10%);
-        }
-    }
-
-    &--light-primary{
+    &--light-primary {
         color: var(--primary-color);
-        background-color: #FFFFFF;
+        background-color: #ffffff;
 
         &:hover {
-            background: darken(#FFFFFF, 10%);
+            background: darken(#ffffff, 10%);
         }
     }
 
-    &--outline-primary{
-        border: 1px solid var(--border-color);
-        color: var(--primary-color);
-        background-color: #FFFFFF;
-        
-        &:hover {
-            background: darken(#FFFFFF, 10%);
+    @each $var, $color in colors.$theme-colors {
+        &--invert-#{$var}{
+            color: #{$color};
+            background-color: var(--param-light-color);
+    
+            &:hover {
+                background: darken(#ffffff, 10%);
+            }
         }
+    }
+
+    @each $var, $color in colors.$theme-colors {
+        &--#{$var}{
+            color: var(--param-light-color);
+            background-color: #{$color};
+
+            &:hover {
+                background: lighten($color, 10%);
+            }
+        }
+    }
+
+    @each $var, $color in colors.$theme-colors {
+        &--outline-#{$var} {
+            border: 1px solid #{$color};
+            color: #{$color};
+            background-color: transparent;
+    
+            &:hover {
+                color: var(--param-light-color);
+                background: darken(#ffffff, 10%);
+            }
+        }
+    }
+
+    @each $var, $color in colors.$theme-colors {
+        &--transparent-#{$var}{
+            color: #{$color};
+            background-color: transparent;
+        }
+    }
+
+    &--fluid{
+        min-width: 100%;
     }
 }

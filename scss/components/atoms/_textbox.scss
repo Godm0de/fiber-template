@@ -1,9 +1,13 @@
-.textbox{
+@use "../../settings/colors";
+
+.textbox {
     padding: 2.7778rem 2.1111rem;
     border-radius: 0.5556rem;
 
-    &--primary{
-        background: var(--primary-color);
-        color: var(--param-dark-color);
+    @each $var, $color in colors.$theme-colors {
+        &--#{$var} {
+            background: #{$color};
+            color: var(--param-dark-color);
+        }
     }
 }

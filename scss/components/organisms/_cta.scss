@@ -1,0 +1,32 @@
+.cta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 417px), 1fr));
+  gap: 3rem;
+
+  justify-items: flex-end;
+  padding: 2.7778rem 2.1111rem;
+  border-radius: 0.5556rem;
+  margin-top: 4.4444rem;
+
+  &__body {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8889rem;
+
+    flex-basis: 416px;
+    margin-bottom: 47px;
+    flex-grow: 1;
+  }
+
+  &__title{
+      margin: 0;
+  }
+
+  &__text{
+    margin: 0;
+    color: var(--param-dark-color);
+  }
+
+}

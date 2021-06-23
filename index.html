@@ -13,99 +13,106 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <!-- Navbar -->
-            <nav class="navbar">
-                <h3 class="navbar__logo">Fiber</h3>
-                <div class="navbar__list hide-xs show-md">
-                    <ul class="list list--horiz">
-                        <li class="list__item"><a href="" class="list__link">Community</a></li>
-                        <li class="list__item"><a href="" class="list__link">Pricing</a></li>
-                        <li class="list__item"><a href="" class="list__link">Features</a></li>
-                    </ul>
-                </div>
-                <div class="navbar__buttons hide-xs show-md">
-                    <button class="button button--light-primary bg-transparent">Sign In</button>
-                    <button class="button button--primary ripple">Sign Up</button>
-                </div>
-                <button class="navbar__toggle ripple hide-md" id="navbarToggler">
-                    <img class="navbar__icon" src="img/Hamburger Menu.svg" alt="">
-                </button>
+        <!-- NAVBAR -->
+        <div class="navbar container">
+            <h3 class="navbar__title">Fiber</h3>
 
-                <!-- Sidebar used in responsive -->
-                <div class="sidebar" id="sidebar">
-                    <ul class="sidebar__list">
-                        <li class="sidebar__item">
-                            <i class="material-icons sidebar__icon">people</i>
-                            <a href="" class="sidebar__link">Community</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <i class="material-icons sidebar__icon">forum</i>
-                            <a href="" class="sidebar__link">Pricing</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <i class="material-icons sidebar__icon">local_library</i>
-                            <a href="" class="sidebar__link">Features</a>
-                        </li>
-                    </ul>
-                    <div class="sidebar__buttons sidebar__icon">
-                        <button class="button button--light-primary">Sign In</button>
-                        <button class="button button--primary">Sign Up</button>
-                    </div>
-                </div>
-                <div class="navbar__overlay" id="overlay"></div>
+            <!--NAV-->
+            <nav class="navbar__nav hide-xs show-md">
+                <ul class="list list--horiz">
+                    <li class="list__item"><a href="" class="list__link">Community</a></li>
+                    <li class="list__item"><a href="" class="list__link">Pricing</a></li>
+                    <li class="list__item"><a href="" class="list__link">Features</a></li>
+                </ul>
             </nav>
 
-            <!-- Hero section -->
-            <section class="hero">
-                <article class="hero__param">
-                    <div class=" hide-xs show-md">
-                        <div class="hero__rating">
-                            <div class="rating">
-                                <input type="radio" name="rating" class="rating__input" id="rate-5" checked>
-                                <label for="rate-5" value="5" class="rating__label fa fa-star"></label>
-                                <input type="radio" name="rating" class="rating__input" id="rate-4">
-                                <label for="rate-4" value="4" class="rating__label fa fa-star"></label>
-                                <input type="radio" name="rating" class="rating__input" id="rate-3">
-                                <label for="rate-3" value="3" class="rating__label fa fa-star"></label>
-                                <input type="radio" name="rating" class="rating__input" id="rate-2">
-                                <label for="rate-2" value="2" class="rating__label fa fa-star"></label>
-                                <input type="radio" name="rating" class="rating__input" id="rate-1">
-                                <label for="rate-1" value="1" class="rating__label fa fa-star"></label>
-                            </div>
-                            <p class="hero__reviews">Rated 4.8/5 (243 reviews)</p>
-                        </div>
-                    </div>
-                    <h1 class="hero__title">Create your portfolio in minutes.</h1>
-                    <p class="hero__text">With Fiber, you can setup your own personal portfolio in minutes with dozens
-                        of
-                        premade, beautiful templates.</p>
-                    <div class="hero__buttons">
-                        <button class="button button--primary ripple">Start Free Trial</button>
-                        <button class="button button--light-primary bg-transparent text-underline">View
-                            Examples</button>
-                    </div>
-                    <ul class="list list--horiz hero__list">
-                        <li class="list__item"><span class="list__bullet"></span>No Credit Card Required</li>
-                        <li class="list__item"><span class="list__bullet"></span>10 Free Templates</li>
-                    </ul>
-                </article>
+            <div class="navbar__buttons hide-xs show-md">
+                <button class="button button--light-primary bg-transparent">Sign In</button>
+                <button class="button button--primary ripple">Sign Up</button>
+            </div>
 
-                <img src="img/hero-Illustration.png" alt="" class="hero__image">
-
-            </section>
+            <button class="navbar__toggle ripple hide-md" id="navbarToggler">
+                <img class="navbar__icon" src="img/Hamburger Menu.svg" alt="">
+            </button>
         </div>
+
+
+        <!-- RESPONSIVE SIDEBAR -->
+        <div class="sidebar" id="sidebar">
+            <nav>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <i class="material-icons sidebar__icon">people</i>
+                        <a href="" class="sidebar__link">Community</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <i class="material-icons sidebar__icon">forum</i>
+                        <a href="" class="sidebar__link">Pricing</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <i class="material-icons sidebar__icon">local_library</i>
+                        <a href="" class="sidebar__link">Features</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar__buttons sidebar__icon">
+                <button class="button button--light-primary">Sign In</button>
+                <button class="button button--primary">Sign Up</button>
+            </div>
+        </div>
+        <div class="navbar__overlay" id="overlay"></div>
+
+        <!-- HERO SECTION -->
+        <section class="hero container">
+            <article class="hero__param">
+                <div class=" hide-xs show-md">
+                    <div class="hero__rating">
+                        <div class="rating">
+                            <input type="radio" name="rating" class="rating__input" id="rate-5" checked>
+                            <label for="rate-5" value="5" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-4">
+                            <label for="rate-4" value="4" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-3">
+                            <label for="rate-3" value="3" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-2">
+                            <label for="rate-2" value="2" class="rating__label fa fa-star"></label>
+                            <input type="radio" name="rating" class="rating__input" id="rate-1">
+                            <label for="rate-1" value="1" class="rating__label fa fa-star"></label>
+                        </div>
+                        <p class="hero__reviews">Rated 4.8/5 (243 reviews)</p>
+                    </div>
+                </div>
+                <h1 class="hero__title">Create your portfolio in minutes.</h1>
+                <p class="hero__text">With Fiber, you can setup your own personal portfolio in minutes with dozens
+                    of
+                    premade, beautiful templates.</p>
+                <div class="hero__buttons">
+                    <button class="button button--primary ripple">Start Free Trial</button>
+                    <button class="button button--light-primary bg-transparent text-underline">View
+                        Examples</button>
+                </div>
+                <ul class="list list--horiz hero__list">
+                    <li class="list__item"><span class="list__bullet"></span>No Credit Card Required</li>
+                    <li class="list__item"><span class="list__bullet"></span>10 Free Templates</li>
+                </ul>
+            </article>
+
+            <img src="img/hero-Illustration.png" alt="" class="hero__image">
+        </section>
     </header>
 
-    <main>
-        <!-- Articles section -->
-        <section class="container section">
-            <h4 class="section__title">Why Fiber?</h4>
-            <h2 class="section__subtitle">A good portfolio means good employability.</h2>
 
-            <article class="article-deck">
-                <div class="article">
-                    <svg class="article__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
+
+    <main>
+        <!-- FEATURES SECTION -->
+        <section class="container features">
+            <h4 class="features__title">Why Fiber?</h4>
+            <h2 class="features__subtitle">A good portfolio means good employability.</h2>
+
+            <div class="features__gallery">
+                <div class="feature">
+                    <svg class="feaure__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="chronometer">
                             <path id="button2"
@@ -146,8 +153,9 @@
                     <p class="article__text text-light-secondary">With a selection of premade templates, you can build
                         out a portfolio in less than 10 minutes.</p>
                 </div>
-                <div class="article">
-                    <svg width="40" class="article__image" height="40" viewBox="0 0 40 40" fill="none"
+
+                <div class="feature">
+                    <svg width="40" class="feaure__image" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="code" clip-path="url(#clip0)">
                             <rect id="background" width="40" height="40" rx="9" fill="#4D13D1" />
@@ -177,12 +185,12 @@
                         </defs>
                     </svg>
 
-                    <h4 class="article__title">Add custom CSS</h4>
-                    <p class="article__text text-light-secondary">Customize your personal portfolio even more with the
+                    <h4 class="feature__title">Add custom CSS</h4>
+                    <p class="feature__text text-light-secondary">Customize your personal portfolio even more with the
                         ability to add your own custom CSS styles.</p>
                 </div>
-                <div class="article">
 
+                <div class="feature">
                     <svg class="article__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" />
@@ -208,31 +216,31 @@
                         </defs>
                     </svg>
 
-                    <h4 class="article__title">Responsive</h4>
-                    <p class="article__text text-light-secondary">All Fiber templates are fully responsive to ensure the
+                    <h4 class="feature__title">Responsive</h4>
+                    <p class="feature__text text-light-secondary">All Fiber templates are fully responsive to ensure the
                         experience is seemless across all devices.</p>
                 </div>
-            </article>
+                </article>
         </section>
 
-        <!-- Information textbox -->
+        <!--CTA SECTION-->
         <section class="container section">
-            <div class="textbox textbox--primary pb-0 info-card">
-                <article class="article">
-                    <h2 class="article__title text-light">Diversify your portfolio.</h2>
-                    <p class="article__text">Create an even more impressive portfolio by creating case studies for your
+            <div class="cta bg-primary pb-0">
+                <article class="cta__body">
+                    <h2 class="cta__title text-light">Diversify your portfolio.</h2>
+                    <p class="cta__text">Create an even more impressive portfolio by creating case studies for your
                         projects. Simply follow our step-by-step guide.</p>
-                    <button class="button button--light-primary">Start Free Trial</button>
+                    <button class="button button--fluid button--light-primary">Start Free Trial</button>
                 </article>
 
-                <img src="img/Page Image.png" class="image-responsive" alt="">
+                <img src="img/Page Image.png" class="cta__image image-responsive" alt="">
 
             </div>
         </section>
 
-        <!-- Cards section -->
-        <section class="container section">
-            <article class="card-deck">
+        <!-- TESTIMONIAL SECTION -->
+        <section class="container">
+            <div class="testimonials">
                 <div class="card">
                     <div class="card__header">
                         <div class="profile">
@@ -248,7 +256,8 @@
                             then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
                     </div>
                     <div class="card__footer">
-                        <button class="button button--outline-primary">View Sarah’s Portfolio</button>
+                        <button class="button button--fluid button--outline-light text-primary">View Sarah’s
+                            Portfolio</button>
                     </div>
                 </div>
 
@@ -267,7 +276,8 @@
                             templates, now I just need to work on my case studies and I’ll be ready to go!</p>
                     </div>
                     <div class="card__footer">
-                        <button class="button button--outline-primary">View Mathew’s Portfolio</button>
+                        <button class="button button--fluid button--outline-light text-primary">View Mathew’s
+                            Portfolio</button>
                     </div>
                 </div>
 
@@ -286,10 +296,11 @@
                             than I ever made in my full-time job. The templates are just so amazing.</p>
                     </div>
                     <div class="card__footer">
-                        <button class="button button--outline-primary">View Janice’s Portfolio</button>
+                        <button class="button button--fluid button--outline-light text-primary">View Janice’s
+                            Portfolio</button>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
     <!-- Footer -->

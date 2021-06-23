@@ -1,4 +1,3 @@
-
 // ITCSS - BEMIT CASCADE
 
 // Generic
@@ -12,11 +11,8 @@
 @use "./elements/body";
 @use "./elements/typography";
 
-//Objects 
+//Objects
 @use "./objects/container";
-@use "./objects/article-deck";
-@use "./objects/card-deck";
-@use './objects/info-card';
 
 // Components
 @use "./components/atoms/buttons";
@@ -25,22 +21,24 @@
 @use "./components/atoms/profile";
 @use "./components/atoms/textbox";
 @use "./components/atoms/rating";
-@use "./components/atoms/ripple";
 @use "./components/atoms/icons";
 
 @use "./components/molecules/sidebar";
 @use "./components/molecules/card";
 @use "./components/molecules/navbar";
 @use "./components/molecules/hero";
-@use "./components/molecules/article";
+@use "./components/molecules/feature";
 
 @use "./components/organisms/header";
-@use "./components/organisms/section";
+@use "./components/organisms/cta";
+@use "./components/organisms/features";
+@use "./components/organisms/testimonials";
 @use "./components/organisms/footer";
 
 // Utilities
-@use "./utilities/background";
+@use "./utilities/colors";
 @use "./utilities/text";
 @use "./utilities/images";
 @use "./utilities/box-model";
 @use "./utilities/responsive";
+@use "./utilities/ripple";

@@ -2,12 +2,12 @@
 @use "../settings/breakpoints";
 
 @each $br, $val in breakpoints.$breakpoints {
-    @include media.media-screen($val){
-        .hide-#{$br}{
+    @include media.media-screen($val) {
+        .hide-#{$br} {
             display: none !important;
         }
 
-        .show-#{$br}{
+        .show-#{$br} {
             display: block !important;
         }
     }

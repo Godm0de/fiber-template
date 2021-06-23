@@ -5,18 +5,18 @@
 
     font-weight: 400;
     color: var(--input-placeholder-color);
-    
-    &:focus{
+
+    &:focus {
         outline-color: var(--border-color);
     }
 
-    &__label{
+    &__label {
         display: block;
         margin-bottom: 0.4444rem;
         font-weight: 600;
     }
 
-    &--primary:focus{
+    &--primary:focus {
         outline-color: var(--primary-color);
     }
 }

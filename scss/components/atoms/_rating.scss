@@ -1,24 +1,25 @@
-.rating{
+.rating {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 0.3333rem;
 
-    &__input{
-       display: none;
+    &__input {
+        display: none;
     }
 
-    &__label{
-        color: #A9A9A9;
+    &__label {
+        color: #a9a9a9;
         transition: all 0.2s ease;
+        cursor: pointer;
     }
 
     &__input:not(:checked) ~ &__label:hover,
-    &__input:not(:checked) ~ &__label:hover ~ &__label{
-        color: #FF9529;
+    &__input:not(:checked) ~ &__label:hover ~ &__label {
+        color: #ff9529;
     }
 
-    &__input:checked ~ &__label{
-        color: #FF9529;
-    } 
+    &__input:checked ~ &__label {
+        color: #ff9529;
+    }
 }

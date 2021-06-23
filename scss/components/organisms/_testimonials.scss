@@ -1,0 +1,6 @@
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11.3889rem), 1fr));
+    gap: 2.2222rem;
+    margin-top: 4.44rem;
+}

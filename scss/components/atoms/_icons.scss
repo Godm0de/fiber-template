@@ -1,20 +1,25 @@
 // Animate icons
-#chronometer:hover #hand{
-    transform: rotate(360deg);
-    transform-origin: center 56%;
-    transition: transform 1s linear;
-    transition-delay: 0.5s;
+#chronometer:hover {
+    cursor: pointer;
+    
+    #hand {
+        transform: rotate(360deg);
+        transform-origin: center 56%;
+        transition: transform 1s linear;
+        transition-delay: 0.5s;
+    }
 }
 
 #code:hover {
-    #right-sign{
+    cursor: pointer;
+    #right-sign {
         transform: rotateX(180deg);
         transform-origin: center;
         transition: transform 0.25s linear;
         transition-delay: 0.5s;
     }
-    
-    #left-sign{
+
+    #left-sign {
         transform: rotateX(180deg);
         transform-origin: center;
         transition: transform 0.25s linear;
@@ -22,19 +27,17 @@
     }
 }
 
-#responsive:hover{
-
+#responsive:hover {
+    cursor: pointer;
     #phone {
         transform: translateX(50px);
-        transition: transform .5s linear;
+        transition: transform 0.5s linear;
         transition-delay: 0.5s;
     }
 
-    #tablet{
+    #tablet {
         transform: translateX(5px);
-        transition: transform .5s linear;
+        transition: transform 0.5s linear;
         transition-delay: 0.5s;
     }
 }
-
-
