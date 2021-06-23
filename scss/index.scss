@@ -13,8 +13,6 @@
 
 //Objects
 @use "./objects/container";
-@use './objects/info-card';
-@use "./objects/gallery";
 
 // Components
 @use "./components/atoms/buttons";
@@ -29,7 +27,6 @@
 @use "./components/molecules/card";
 @use "./components/molecules/navbar";
 @use "./components/molecules/hero";
-@use "./components/molecules/article";
 @use "./components/molecules/feature";
 
 @use "./components/organisms/header";

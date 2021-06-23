@@ -411,27 +411,6 @@ h6 {
   padding: 0 2.2222rem;
 }
 
-.info-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.info-card .article {
-  flex-basis: 416px;
-  margin-bottom: 47px;
-  flex-grow: 1;
-}
-.info-card .image-responsive {
-  max-width: 458px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11.3889rem, 1fr));
-  gap: 2.2222rem;
-}
-
 .button {
   padding: 0.8889em 1.5556rem;
   border: 0;
@@ -901,23 +880,6 @@ h6 {
 }
 .hero__list {
   margin-top: 0.4444rem;
-}
-
-.article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.8889rem;
-}
-.article__image {
-  margin: 0;
-}
-.article__title {
-  margin: 0;
-}
-.article__text {
-  margin: 0;
 }
 
 .feature {
