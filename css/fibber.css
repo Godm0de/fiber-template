@@ -961,16 +961,10 @@ h6 {
   padding-top: 3.6667rem;
   padding-bottom: 3.6667rem;
 }
-.footer__section {
+.footer__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.0556rem), 1fr));
   gap: 2.2222rem;
-}
-.footer__article, .footer__links {
-  align-self: flex-start;
-}
-.footer__article > .article__text, .footer__links > .article__text {
-  max-width: 29ch;
 }
 .footer__article {
   grid-column: 1/3;

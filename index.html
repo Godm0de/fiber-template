@@ -111,7 +111,7 @@
             <h2 class="features__subtitle">A good portfolio means good employability.</h2>
 
             <div class="features__gallery">
-                <div class="feature">
+                <article class="feature">
                     <svg class="feaure__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="chronometer">
@@ -152,9 +152,9 @@
                     <h4 class="feature__title">Build in minutes</h4>
                     <p class="feature__text text-light-secondary">With a selection of premade templates, you can build
                         out a portfolio in less than 10 minutes.</p>
-                </div>
+                </article>
 
-                <div class="feature">
+                <article class="feature">
                     <svg width="40" class="feaure__image" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="code" clip-path="url(#clip0)">
@@ -188,10 +188,10 @@
                     <h4 class="feature__title">Add custom CSS</h4>
                     <p class="feature__text text-light-secondary">Customize your personal portfolio even more with the
                         ability to add your own custom CSS styles.</p>
-                </div>
+                </article>
 
-                <div class="feature">
-                    <svg class="article__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                <article class="feature">
+                    <svg class="feature__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" />
                         <g id="responsive" clip-path="url(#clip0)">
@@ -219,8 +219,8 @@
                     <h4 class="feature__title">Responsive</h4>
                     <p class="feature__text text-light-secondary">All Fiber templates are fully responsive to ensure the
                         experience is seemless across all devices.</p>
-                </div>
-                </article>
+            </div>
+            </article>
         </section>
 
         <!--CTA SECTION-->
@@ -241,7 +241,7 @@
         <!-- TESTIMONIAL SECTION -->
         <section class="container">
             <div class="testimonials">
-                <div class="card">
+                <article class="card">
                     <div class="card__header">
                         <div class="profile">
                             <img src="img/User Avatar.svg" alt="" class="profile__avatar">
@@ -259,9 +259,9 @@
                         <button class="button button--fluid button--outline-light text-primary">View Sarah’s
                             Portfolio</button>
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <div class="card__header">
                         <div class="profile">
                             <img src="img/User Avatar 2.svg" alt="" class="profile__avatar">
@@ -279,9 +279,9 @@
                         <button class="button button--fluid button--outline-light text-primary">View Mathew’s
                             Portfolio</button>
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <div class="card__header">
                         <div class="profile">
                             <img src="img/User Avatar 32.svg" alt="" class="profile__avatar">
@@ -299,61 +299,70 @@
                         <button class="button button--fluid button--outline-light text-primary">View Janice’s
                             Portfolio</button>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <section class="footer__section container">
+        <section class="footer__grid container">
             <!-- Article -->
-            <article class="article footer__article">
-                <h3 class="article__title">Fiber</h3>
-                <p class="article__text text-light-secondary">With Fiber, you can setup your own personal portfolio in
+            <article class="footer__article footer__section">
+                <h3 class="footer__title">Fiber</h3>
+                <p class="footer__text text-light-secondary">With Fiber, you can setup your own personal portfolio in
                     minutes with dozens of premade, beautiful templates.</p>
                 <p class="footer__copyright text-light-secondary">Made with ❤️ in the Netherlands.</p>
             </article>
 
             <!-- Links list-->
-            <article class="article footer__links">
-                <h3 class="article__title">Sitemap</h3>
-                <ul class="list text-light-secondary">
-                    <li class="list__item"><a href="" class="list__link">Homepage</a></li>
-                    <li class="list__item"><a href="" class="list__link">Pricing</a></li>
-                    <li class="list__item"><a href="" class="list__link">Testimonials</a></li>
-                    <li class="list__item"><a href="" class="list__link">Features</a></li>
-                </ul>
-            </article>
+            <section class="footer__section">
+                <h3 class="footer__title">Sitemap</h3>
+                <nav class="footer__nav">
+                    <ul class="list text-light-secondary">
+                        <li class="list__item"><a href="" class="list__link">Homepage</a></li>
+                        <li class="list__item"><a href="" class="list__link">Pricing</a></li>
+                        <li class="list__item"><a href="" class="list__link">Testimonials</a></li>
+                        <li class="list__item"><a href="" class="list__link">Features</a></li>
+                    </ul>
+                </nav>
+            </section>
 
             <!-- Links list-->
-            <article class="article footer__links">
-                <h3 class="article__title">Resources</h3>
-                <ul class="list text-light-secondary">
-                    <li class="list__item"><a href="" class="list__link">Support</a></li>
-                    <li class="list__item"><a href="" class="list__link">Contact</a></li>
-                    <li class="list__item"><a href="" class="list__link">FAQ</a></li>
-                </ul>
-            </article>
+            <section class="footer__section">
+                <h3 class="footer__title">Resources</h3>
+                <nav class="footer__nav">
+                    <ul class="list text-light-secondary">
+                        <li class="list__item"><a href="" class="list__link">Support</a></li>
+                        <li class="list__item"><a href="" class="list__link">Contact</a></li>
+                        <li class="list__item"><a href="" class="list__link">FAQ</a></li>
+                    </ul>
+                </nav>
+            </section>
 
             <!-- Links list-->
-            <article class="article footer__links">
-                <h3 class="article__title">Company</h3>
-                <ul class="list text-light-secondary">
-                    <li class="list__item"><a href="" class="list__link">About</a></li>
-                    <li class="list__item"><a href="" class="list__link">Customers</a></li>
-                    <li class="list__item"><a href="" class="list__link">Blog</a></li>
-                </ul>
-            </article>
+            <section class="footer__section">
+                <h3 class="footer__title">Company</h3>
+
+                <nav class="footer__nav">
+                    <ul class="list text-light-secondary">
+                        <li class="list__item"><a href="" class="list__link">About</a></li>
+                        <li class="list__item"><a href="" class="list__link">Customers</a></li>
+                        <li class="list__item"><a href="" class="list__link">Blog</a></li>
+                    </ul>
+                </nav>
+            </section>
 
             <!-- Links list-->
-            <article class="article footer__links">
-                <h3 class="article__title">Portfolios</h3>
-                <ul class="list text-light-secondary">
-                    <li class="list__item"><a href="" class="list__link">Sarah Andrews</a></li>
-                    <li class="list__item"><a href="" class="list__link">Mathew Higgins</a></li>
-                    <li class="list__item"><a href="" class="list__link">Janice Dave</a></li>
-                </ul>
-            </article>
+            <section class="footer__section">
+                <h3 class="footer__title">Portfolios</h3>
+                <nav class="footer__nav">
+                    <ul class="list text-light-secondary">
+                        <li class="list__item"><a href="" class="list__link">Sarah Andrews</a></li>
+                        <li class="list__item"><a href="" class="list__link">Mathew Higgins</a></li>
+                        <li class="list__item"><a href="" class="list__link">Janice Dave</a></li>
+                    </ul>
+                </nav>
+            </section>
         </section>
     </footer>
     <script src="js/scripts.js"></script>
