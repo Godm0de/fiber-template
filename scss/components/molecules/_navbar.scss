@@ -18,6 +18,10 @@
         cursor: pointer;
     }
 
+    &__title{
+        font-weight: 700;
+    }
+
     &__toggle:active {
         background: var(--border-color);
     }
@@ -28,6 +32,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
+        z-index: var(--z-index1);
         background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(2px);
         visibility: hidden;

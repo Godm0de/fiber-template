@@ -354,7 +354,7 @@ Recommendation: math.div(16, $-font-base) */
   --title-dark-color: #ffffff;
   --param-dark-color: #e5ddfd;
   --button-text-color: #fbf8f3;
-  --param-light-secondary-color: #a9a9a9;
+  --param-light-secondary-color: #4f4f4f;
   --input-placeholder-color: #a9a9a9;
   --border-color: #dadada;
   --button-fs: 1rem;
@@ -406,7 +406,7 @@ h6 {
 
 .container {
   width: 100%;
-  max-width: 63.3333rem;
+  max-width: 84.3889rem;
   margin: 0 auto;
   padding: 0 2.2222rem;
 }
@@ -741,7 +741,7 @@ h6 {
   padding: 1.1111rem;
   width: 80%;
   max-width: 14.7222rem;
-  z-index: var(--z-index1);
+  z-index: var(--z-index2);
   transform: translateX(-18.8889rem);
   transition: transform 0.3s;
 }
@@ -815,6 +815,9 @@ h6 {
   padding: 0.75em;
   cursor: pointer;
 }
+.navbar__title {
+  font-weight: 700;
+}
 .navbar__toggle:active {
   background: var(--border-color);
 }
@@ -824,6 +827,7 @@ h6 {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: var(--z-index1);
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
   visibility: hidden;
@@ -862,6 +866,7 @@ h6 {
 }
 .hero__image {
   width: 100%;
+  max-width: 28.9444rem;
   height: auto;
   justify-self: flex-end;
 }
@@ -879,7 +884,7 @@ h6 {
   }
 }
 .hero__text {
-  margin: 0 0 0.4444rem 0;
+  margin: 0;
   color: var(--param-light-secondary-color);
 }
 .hero__buttons {
@@ -888,8 +893,10 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 1.3333rem;
+  margin-top: 0.8889rem;
 }
 .hero__buttons .button {
+  min-width: 178px;
   flex-grow: 1;
 }
 .hero__list {
@@ -935,10 +942,10 @@ h6 {
 }
 
 .cta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 417px), 1fr));
+  gap: 3rem;
+  justify-items: flex-end;
   padding: 2.7778rem 2.1111rem;
   border-radius: 0.5556rem;
   margin-top: 4.4444rem;
@@ -959,9 +966,6 @@ h6 {
 .cta__text {
   margin: 0;
   color: var(--param-dark-color);
-}
-.cta__image {
-  max-width: 458px;
 }
 
 .features {

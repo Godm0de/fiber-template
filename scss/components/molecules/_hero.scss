@@ -17,6 +17,7 @@
 
     &__image {
         width: 100%;
+        max-width: 28.9444rem;
         height: auto;
 
         justify-self: flex-end;
@@ -28,13 +29,14 @@
 
     &__title {
         margin: 0.4444rem 0;
+
         @media screen and (max-width: 470px) {
             font-size: 36px;
         }
     }
 
     &__text {
-        margin: 0 0 0.4444rem 0;
+        margin: 0;
         color: var(--param-light-secondary-color);
     }
 
@@ -44,8 +46,10 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 1.3333rem;
+        margin-top: 0.8889rem;
 
         .button {
+            min-width: 178px;
             flex-grow: 1;
         }
     }
