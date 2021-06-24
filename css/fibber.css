@@ -874,12 +874,9 @@ h6 {
   margin-bottom: 1.3333rem;
   margin-top: 0.8889rem;
 }
-.hero__buttons .button {
-  width: 100%;
-}
 @media screen and (max-width: 470px) {
   .hero__buttons .button {
-    min-width: 178px;
+    flex-grow: 1;
   }
 }
 .hero__list {

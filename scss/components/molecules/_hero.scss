@@ -49,10 +49,8 @@
         margin-top: 0.8889rem;
 
         .button {
-            width: 100%;
-
             @media  screen and (max-width: 470px) {
-                min-width: 178px;
+                flex-grow: 1;
             }
         }
     }
