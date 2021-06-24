@@ -875,8 +875,12 @@ h6 {
   margin-top: 0.8889rem;
 }
 .hero__buttons .button {
-  min-width: 178px;
-  flex-grow: 1;
+  width: 100%;
+}
+@media screen and (max-width: 470px) {
+  .hero__buttons .button {
+    min-width: 178px;
+  }
 }
 .hero__list {
   margin-top: 0.4444rem;
@@ -921,6 +925,14 @@ h6 {
   flex-basis: 416px;
   margin-bottom: 47px;
   flex-grow: 1;
+}
+.cta__body .button {
+  min-width: 100%;
+}
+@media screen and (min-width: 470px) {
+  .cta__body .button {
+    min-width: 178px;
+  }
 }
 .cta__title {
   margin: 0;

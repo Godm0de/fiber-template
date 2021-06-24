@@ -1,4 +1,3 @@
-
 // Add event to sidebar
 document.getElementById('navbarToggler').addEventListener('click', () => {
     document.getElementById('sidebar').classList.toggle('opened');

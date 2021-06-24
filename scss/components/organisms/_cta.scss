@@ -8,7 +8,7 @@
   border-radius: 0.5556rem;
   margin-top: 4.4444rem;
 
-  &__body {    
+  &__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,15 +18,22 @@
     flex-basis: 416px;
     margin-bottom: 47px;
     flex-grow: 1;
+
+    .button {
+      min-width: 100%;
+
+      @media screen and (min-width: 470px) {
+        min-width: 178px;
+      }
+    }
   }
 
-  &__title{
-      margin: 0;
+  &__title {
+    margin: 0;
   }
 
-  &__text{
+  &__text {
     margin: 0;
     color: var(--param-dark-color);
   }
-
 }
