@@ -26,17 +26,6 @@
         }
     }
 
-    &__bullet {
-        display: inline-block;
-        background: url("../../../img/Checkmark.svg");
-        height: 24px;
-        width: 24px;
-
-        &--primary {
-            background: url("../../../img/Checkmark.svg");
-        }
-    }
-
     &--horiz {
         display: inline-flex;
         align-items: center;

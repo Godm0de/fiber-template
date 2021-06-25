@@ -17,11 +17,7 @@
 
         cursor: pointer;
     }
-
-    &__title{
-        font-weight: 700;
-    }
-
+    
     &__toggle:active {
         background: var(--border-color);
     }

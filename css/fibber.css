@@ -579,15 +579,6 @@ h6 {
   text-decoration: none;
   color: inherit;
 }
-.list__bullet {
-  display: inline-block;
-  background: url("../../../img/Checkmark.svg");
-  height: 24px;
-  width: 24px;
-}
-.list__bullet--primary {
-  background: url("../../../img/Checkmark.svg");
-}
 .list--horiz {
   display: inline-flex;
   align-items: center;
@@ -794,9 +785,6 @@ h6 {
   padding: 0.75em;
   cursor: pointer;
 }
-.navbar__title {
-  font-weight: 700;
-}
 .navbar__toggle:active {
   background: var(--border-color);
 }
@@ -920,6 +908,7 @@ h6 {
   align-items: flex-start;
   gap: 0.8889rem;
   flex-basis: 416px;
+  margin-bottom: 47px;
   flex-grow: 1;
 }
 .cta__body .button {
@@ -932,9 +921,6 @@ h6 {
 }
 .cta__image {
   height: max(20rem, 25rem);
-  width: 100%;
-
-  border-radius: 0.5556rem 0.5556rem 0 0;
   object-fit: cover;
 }
 .cta__title {
