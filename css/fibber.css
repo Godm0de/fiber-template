@@ -864,7 +864,7 @@ h6 {
 }
 @media screen and (max-width: 470px) {
   .hero__buttons .button {
-    flex-grow: 1;
+    width: 100%;
   }
 }
 .hero__list {
