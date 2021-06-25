@@ -28,6 +28,11 @@
     }
   }
 
+  &__image{
+    height: max(20rem, 25rem);
+    object-fit: cover;
+  }
+
   &__title {
     margin: 0;
   }
