@@ -1,0 +1,16 @@
+.checkbox{
+
+    &__check{
+
+    }
+
+    &__label{
+        font-weight: normal;
+    }
+
+    &__link{
+        color: var(--primary-color);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
